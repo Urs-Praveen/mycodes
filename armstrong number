@@ -1,0 +1,15 @@
+let n=153
+let digit
+let sum=0
+let temp=n
+var check=(n) =>{
+  while(temp>0){
+  digit=temp%10
+  
+  sum=sum+(digit*digit*digit);
+  temp=Math.floor(temp/10)
+}
+if(sum == n) return true 
+return false;
+}
+console.log(check(n))
